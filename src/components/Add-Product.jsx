@@ -34,18 +34,18 @@ function AddProduct({products, setProducts}) {
 
   return (
     <div>
-      <Button color="danger" onClick={toggle}>
+      <Button color="primary" onClick={toggle}>
         Add Product
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle}>Fill Info</ModalHeader>
         <ModalBody>
            <form onSubmit={submit} id="product">
-              <input type="text" onChange={handleChange} name="name" className="form-controll my-2" placeholder="Name..."/>
-              <input type="text" onChange={handleChange} name="price" className="form-controll my-2" placeholder="Price..."/>
-              <input type="text" onChange={handleChange} name="sale" className="form-controll my-2" placeholder="Sale..."/>
-              <input type="text" onChange={handleChange} name="quantity" className="form-controll my-2" placeholder="Quantity..."/>
-              <input type="text" onChange={handleChange} name="img" className="form-controll my-2 col-12" placeholder="Img..."/>
+              <input type="text" required onChange={handleChange} name="name" className="form-control my-2" placeholder="Name..."/>
+              <input type="text" required onChange={handleChange} name="price" className="form-control my-2" placeholder="Price..."/>
+              <input type="text" required onChange={handleChange} name="sale" className="form-control my-2" placeholder="Sale..."/>
+              <input type="text" required onChange={handleChange} name="quantity" className="form-control my-2" placeholder="Quantity..."/>
+              <input type="text" required onChange={handleChange} name="img" className="form-control my-2 col-12" placeholder="Img..."/>
             </form>
         </ModalBody>
         <ModalFooter>
